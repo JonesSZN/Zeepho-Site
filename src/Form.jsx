@@ -21,16 +21,16 @@ const Form = () => {
 
 const FormLeft = () => {
   return (
-    <div className="bg-white w-1/2 rounded-3xl p-12">
+    <div className="bg-white lg:w-1/2 rounded-3xl p-12">
       <form className="flex flex-col gap-2" action="">
         <div className="lg:flex lg:flex-row flex flex-col  gap-2 items-center">
           <input
-            className="border outline-blue-400 lg:w-auto w-full p-4 border-[0,0,0,0.5] rounded-2xl"
+            className="border outline-blue-400  w-full p-4 border-[0,0,0,0.5] rounded-2xl"
             type="text"
             placeholder="Name *"
           />
           <input
-            className="border p-4 outline-blue-400  lg:w-auto w-full  border-[0,0,0,0.5] rounded-2xl"
+            className="border p-4 outline-blue-400   w-full  border-[0,0,0,0.5] rounded-2xl"
             type="text"
             placeholder="Company *"
           />
@@ -87,7 +87,7 @@ const BottomDivText = () => {
 
 const FormRight = () => {
   return (
-    <div className="bg-[#1a2737] w-1/2 flex flex-col gap-4 p-12 rounded-3xl">
+    <div className="bg-[#1a2737] lg:w-1/2 flex flex-col gap-4 p-12 rounded-3xl">
       <div>
         <h2 className="lg:text-[24px] text-[18px] font-bold text-[#66d996]">
           Hate Forms?

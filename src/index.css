@@ -11,3 +11,16 @@ html {
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
+
+@keyframes slide {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos-slide {
+  animation: 35s slide infinite linear;
+}

@@ -1,9 +1,12 @@
 import { CloudLightningIcon } from "lucide-react";
+import { Looper } from "./Looper";
 
 const Partner = () => {
   return (
     <section className="w-full flex justify-center py-12 bg-[#000f21]]">
-      <div className="lg:w-[60%]  w-[95%] flex flex-col items-center max-w-[1920px]">
+      <div className="lg:w-[60%]  w-[95%] flex flex-col gap-4 items-center max-w-[1920px]">
+        <Looper />
+
         <Grid />
         <CloudLightningIcon className="mt-24" color="yellow" size={50} />
       </div>

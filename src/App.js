@@ -8,7 +8,7 @@ import { Footer } from "./Footer";
 
 function App() {
   return (
-    <div className=" bg-[#000f21]   w-screen flex flex-col items-center">
+    <div className=" bg-[#000f21]  flex flex-col items-center">
       <Header />
       <Strategies />
       <Service />

@@ -21,7 +21,7 @@ const Form = () => {
 
 const FormLeft = () => {
   return (
-    <div className="bg-white rounded-3xl p-12">
+    <div className="bg-white w-1/2 rounded-3xl p-12">
       <form className="flex flex-col gap-2" action="">
         <div className="lg:flex lg:flex-row flex flex-col  gap-2 items-center">
           <input
@@ -87,7 +87,7 @@ const BottomDivText = () => {
 
 const FormRight = () => {
   return (
-    <div className="bg-[#1a2737] w-full flex flex-col gap-4 p-12 rounded-3xl">
+    <div className="bg-[#1a2737] w-1/2 flex flex-col gap-4 p-12 rounded-3xl">
       <div>
         <h2 className="lg:text-[24px] text-[18px] font-bold text-[#66d996]">
           Hate Forms?
@@ -122,7 +122,7 @@ const Socials = () => {
       <h2 className="lg:text-[24px] text-[18px] font-bold text-[#66d996]">
         Social
       </h2>
-      <div className="lg:flex lg:flex-row grid grid-cols-4 cursor-pointer items-center gap-4">
+      <div className="lg:flex lg:flex-row grid grid-cols-4 cursor-pointer max-lg:w-fit  items-center gap-4">
         <Instagram color="grey" />
         <Ghost color="grey" />
         <Linkedin color="grey" />

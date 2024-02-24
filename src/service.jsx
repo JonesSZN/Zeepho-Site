@@ -4,7 +4,7 @@ import { Looper } from "./Looper";
 const Service = () => {
   return (
     <section className="w-full py-16 bg-[#000f21] flex justify-center">
-      <div className="lg:w-[70%] flex flex-col gap-4 items-center  max-w-[1920px]">
+      <div className="lg:w-[70%] w-full flex flex-col gap-4 items-center  max-w-[1920px]">
         <Looper />
         <Grid />
         <CloudLightningIcon className="mt-24" color="yellow" size={50} />

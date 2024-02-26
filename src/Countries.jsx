@@ -15,35 +15,68 @@ const Countries = () => {
 
 const Grid = () => {
   return (
-    <div className="lg:grid lg:grid-cols-2 grid grid-cols-1 gap-4 w-[90%] lg:w-full">
-      <div className="w-full bg-[#1a2737] flex flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-white font-bold text-[28px]">Founded in 2016</p>
-      </div>
-      <div className="w-full bg-[#a470f7] flex  flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-[28px] font-bold  text-[#000f21]">North America</p>
-        <p className="text-[#000f21] text-[24px]">2400+campaigns</p>
-      </div>
-      <div className="w-full bg-[#1a2737] flex flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-white font-bold text-[28px]">$200M managed</p>
-      </div>
-      <div className="w-full bg-[#66d996] flex  flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-[28px] font-bold  text-[#000f21]">Europe</p>
-        <p className="text-[#000f21] text-[24px]">1600+ campagins</p>
-      </div>
-      <div className="w-full bg-[#1a2737] flex flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-white font-bold text-[28px]">64 experts</p>
-      </div>
-      <div className="w-full bg-[#73c9fa] flex  flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-[28px] font-bold  text-[#000f21]">South America</p>
-        <p className="text-[#000f21] text-[24px]">800+ campaigns</p>
-      </div>
-      <div className="w-full bg-[#1a2737] flex flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-white font-bold text-[28px]">8 languages</p>
-      </div>
-      <div className="w-full bg-[#ef8b7d] flex flex-col items-center justify-center rounded-2xl h-[159px]">
-        <p className="text-[28px] font-bold  text-[#000f21]">Asia</p>
-        <p className="text-[#000f21] text-[24px]">1200+ campagins</p>
-      </div>
+    <div className="lg:flex lg:flex-row  grid grid-cols-1 gap-4 w-[90%] lg:w-full">
+      <Left />
+      <Right />
+    </div>
+  );
+};
+
+const Left = () => {
+  const LeftArray = [
+    "Founded in 2016",
+    "$200M+ managed",
+    "64 experts",
+    "8 languages",
+  ];
+  return (
+    <div className="flex flex-col w-1/2 gap-4">
+      {LeftArray.map((text) => (
+        <div className="w-full bg-[#1a2737] flex flex-col items-center justify-center rounded-2xl h-[159px]">
+          <p className="text-white font-bold text-[28px]">{text}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+const Right = () => {
+  const RightObject = [
+    {
+      Continent: "North America",
+      Campaign: "2400+ campaigns",
+      Background: "#a470f7",
+    },
+    {
+      Continent: "Europe",
+      Campaign: "1600+ campaigns",
+      Background: "#66d996",
+    },
+    {
+      Continent: "South America",
+      Campaign: "800 campaigns",
+      Background: "#73c9fa",
+    },
+    {
+      Continent: "Asia",
+      Campaign: "1200 campaigns",
+      Background: "#ef8b7d",
+    },
+  ];
+  return (
+    <div className="flex flex-col w-1/2 gap-4">
+      {RightObject.map((Title) => (
+        <div
+          style={{
+            backgroundColor: Title.Background,
+          }}
+          className="w-full bg-[#a470f7] flex  flex-col items-center justify-center rounded-2xl h-[159px]"
+        >
+          <p className="text-[28px] font-bold  text-[#000f21]">
+            {Title.Continent}
+          </p>
+          <p className="text-[#000f21] text-[24px]">{Title.Campaign}</p>
+        </div>
+      ))}
     </div>
   );
 };

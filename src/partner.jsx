@@ -13,6 +13,15 @@ const Partner = () => {
     </section>
   );
 };
+
+const GridItem = ({ item }) => {
+  return (
+    <div className="w-full h-[129px] bg-[#1a2737]  text-2xl text-white font-bold flex items-center justify-center rounded-xl cursor-pointer">
+      <p>{item}</p>
+    </div>
+  );
+};
+
 const Grid = () => {
   const GridText = [
     "Doosfot",
@@ -31,9 +40,7 @@ const Grid = () => {
   return (
     <div className="lg:grid lg:w-full w-[90%] lg:grid-cols-4 grid grid-cols-2 gap-4">
       {GridText.map((item) => (
-        <div className="w-full h-[129px] bg-[#1a2737]  text-2xl text-white font-bold flex items-center justify-center rounded-xl cursor-pointer">
-          <p>{item}</p>
-        </div>
+        <GridItem item={item} />
       ))}
     </div>
   );

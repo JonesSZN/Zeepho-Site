@@ -3,7 +3,8 @@
 ### Project Details
 Made with:
 - HTML
-- TailWindCSS
+- TailwindCSS
+- React
   
 
 

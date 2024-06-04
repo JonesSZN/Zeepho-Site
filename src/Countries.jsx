@@ -30,7 +30,7 @@ const Left = () => {
     "8 languages",
   ];
   return (
-    <div className="flex flex-col w-1/2 gap-4">
+    <div className="flex flex-col lg:w-1/2 gap-4">
       {LeftArray.map((text) => (
         <div className="w-full bg-[#1a2737] flex flex-col items-center justify-center rounded-2xl h-[159px]">
           <p className="text-white font-bold text-[28px]">{text}</p>
@@ -63,7 +63,7 @@ const Right = () => {
     },
   ];
   return (
-    <div className="flex flex-col w-1/2 gap-4">
+    <div className="flex flex-col lg:w-1/2 gap-4">
       {RightObject.map((Title) => (
         <div
           style={{

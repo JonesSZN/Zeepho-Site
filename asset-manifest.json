@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zeepho-site/static/css/main.9d88633a.css",
+    "main.js": "/zeepho-site/static/js/main.ce3703ef.js",
+    "index.html": "/zeepho-site/index.html",
+    "main.9d88633a.css.map": "/zeepho-site/static/css/main.9d88633a.css.map",
+    "main.ce3703ef.js.map": "/zeepho-site/static/js/main.ce3703ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d88633a.css",
+    "static/js/main.ce3703ef.js"
+  ]
+}
